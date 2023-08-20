@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password generator</title>
+  </head>
+  <body>
+    <div id="container1">
+        <h1>To Generate password</h1>
+        <input type="text" placeholder="Enter your name" id="name">
+        <input type="text"placeholder="Enter your fav Number"id="dob">
+        <button onclick="submitdetail()"  class="btn" >Submit</button>
+    </div>
+    
+    <div id="container2">
+      <h1>Generate Password</h1>
+      <div id="Password">
+        <input id =  "input" onclick="copy()" type="text" placeholder="Password" />
+        <img id="copy" onclick="copy()" src="icons8-copy-48.png" alt="" />
+      </div>
+      <button class="btn"  onclick="createpassword()">
+        <img src="icons8-thunder.gif"/> Re Generate
+      <button class="btn"  onclick="location.reload()">
+        <img src="icons8-thunder.gif"/> Start
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
